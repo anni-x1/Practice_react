@@ -1,5 +1,5 @@
 import './App.css';
-import Cards from './Components/Cards';
+import NewsItem from './Components/NewsItem';
 import Navbar from './Components/Navbar';
 
 import React, { Component } from 'react'
@@ -9,7 +9,7 @@ export class App extends Component {
     return (
       <div>
         <Navbar/>
-        <Cards/>
+        <NewsItem/>
       </div>
     )
   }
