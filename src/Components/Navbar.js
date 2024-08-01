@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Navbar extends Component {
     render() {
         return (
-            <div>
+            <>
                 <nav className=" navbar navbar-expand-lg bg-body-primary">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">NewsX</a>
@@ -37,7 +37,7 @@ export class Navbar extends Component {
                         </div>
                     </div>
                 </nav>
-            </div>
+            </>
         )
     }
 }
