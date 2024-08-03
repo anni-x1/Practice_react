@@ -1,20 +1,28 @@
-import './App.css';
-import NewsItem from './Components/NewsItem';
-import Navbar from './Components/Navbar';
-import $ from 'jquery'; 
 import React, { Component } from 'react'
-
-export class App extends Component {
+import Forms from './Components/Forms'
+import Logger from './Components/InputLogger'
+import Events from './Components/Events'
+import Lists from './Components/Lists'
+import Propss from './Components/Propss'
+export default class App extends Component {
   render() {
-    let searchD = $('#search').text();
     return (
       <div>
-        <Navbar/>
-        <NewsItem searchD={searchD}/>
+        <Forms/>
+        <Logger/>
+        <Events/>
+        <Lists/>
+        <Propss  age={21}/>
       </div>
     )
   }
 }
 
-export default App
+Propss.prototypes = {
+  usrname: 'string',
+  age: 'number',
+}
+Propss.defaultProps={
+  usrname:'guest',
+}
 
